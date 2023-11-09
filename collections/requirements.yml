@@ -1,0 +1,16 @@
+---
+collections:
+  - name: redhat_cop.controller_configuration
+  # - community.general
+  # - containers.podman
+  #windows
+  # - chocolatey.chocolatey
+  # - community.windows
+  # - name: ansible.windows
+  #   version: 1.9.0
+  # #cloud
+  # - name: azure.azcollection
+  # - name: amazon.aws
+  # #brian_custom
+  # - servicenow.servicenow
+  # - servicenow.itsm
