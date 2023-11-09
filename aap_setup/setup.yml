@@ -22,7 +22,7 @@ controller_projects:
   - name: Cloud Deploy
     organization: Default
     scm_type: git
-    scm_url: 'https://github.com/brianstinehart/AAPaaS-AAP-Setup.git'
+    scm_url: 'https://github.com/brianstinehart/Cloud-Deploy.git'
 
 controller_credential_types:
   - name: "ServiceNow"
@@ -298,16 +298,3 @@ controller_templates:
           default: ''
           choices: ''
           new_question: true
-
-  - name: "ServiceNow Setup"
-    job_type: run
-    inventory: "Demo Inventory"
-    project: "Cloud Deploy"
-    playbook: "playbooks/servicenow/snow_setup.yml"
-    execution_environment: ServiceNow EE
-    credentials:
-    - "ServiceNow Dev"
-    - "URI Credential"
-    extra_vars:
-      ansible_python_interpreter: /usr/bin/python3
-      demo: brian_custom
